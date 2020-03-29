@@ -6,8 +6,8 @@ const Mars = () => (
   >
     <iframe
       src="https://mars.nasa.gov/layout/embed/image/insightweather/"
-      width="800"
-      height="530"
+      width="1200"
+      height="700"
       scrolling="no"
       frameborder="0"
     />
