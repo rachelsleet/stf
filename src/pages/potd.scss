@@ -1,0 +1,34 @@
+@import "../variables";
+
+.potd-box {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.potd-info {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 $margin-horizontal;
+  padding: $margin-vertical $margin-horizontal;
+  background-color: $background-secondary;
+  border: 5px solid $headline;
+  border-radius: 20px;
+}
+
+.potd-title {
+  font-size: 2em;
+  color: $headline;
+}
+
+.potd-info > * {
+  padding: 20px;
+}
+
+.potd-description {
+  line-height: 1.5em;
+  padding-bottom: 10px;
+}

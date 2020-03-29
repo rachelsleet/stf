@@ -1,0 +1,32 @@
+@import "../variables";
+
+.navbar {
+  color: $headline;
+  height: $navbar-height;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 $margin-horizontal;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+.link {
+  margin: 0 $margin-horizontal;
+  font-size: 1.25em;
+  font-weight: bold;
+  text-decoration: none;
+  color: $headline;
+  &:hover {
+    color: $paragraph;
+  }
+}
+
+.title {
+  font-size: 2em;
+  font-weight: bold;
+}
