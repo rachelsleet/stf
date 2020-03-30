@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { Magnifier } from "react-image-magnifiers";
 import PotdInfo from "../components/potd-info";
 import "./potd.scss";
 
@@ -7,14 +8,14 @@ const POTD = ({ potd }) => {
     <div className="potd-info">
       <h3 className="potd-title">{potd.title}</h3>
       {potd.media_type === "image" ? (
-        <img
-          src={potd.hdurl}
+        <Magnifier
+          imageSrc={potd.hdurl}
           style={{
             maxWidth: "100%",
-            maxHeight: "100%",
-            overflow: "visible"
+            maxHeight: "700px",
+            overflow: "scroll"
           }}
-          alt={potd.title}
+          imageAlt={potd.title}
         />
       ) : (
         <iframe src={potd.url} width={560} height={315} title={potd.title} />
